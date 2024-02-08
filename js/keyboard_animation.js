@@ -86,7 +86,7 @@ Ball.prototype.setDirection = function (actionBtn) {
         console.log("stop");
     }else if (this.speed > 0 && actionBtn === "z") {
         this.speed -= 1;
-    }else if (actionBtn === "x") {
+    }else if (this.speed < 9 && actionBtn === "x") {
         this.speed += 1;
     }else if (this.size > 0 && actionBtn === "c") {
         this.size -= 1;
